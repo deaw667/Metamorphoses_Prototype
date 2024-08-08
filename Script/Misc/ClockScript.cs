@@ -33,28 +33,6 @@ public class ClockScript : MonoBehaviour
         currentTime = startTime;
     }
 
-   /* void Update()
-    {
-        currentTime += Time.deltaTime * timeSpeedMultiplier;
-
-        // Calculate the game time in hours
-        gameTimeInHours = currentTime / 60f; // 1 minute in real life = 24 hours in game
-
-        // Calculate the hour in game-time
-        gameHour = gameTimeInHours % 24;
-
-        // Calculate the angle for the hour hand
-        hourAngle = (gameHour + gameTimeInHours / 24f) * 30f;
-
-        // Rotate the hour hand with the arrow speed multiplier
-        hourArrow.transform.localEulerAngles = new Vector3(0f, 0f, -hourAngle * arrowSpeedMultiplier +15f);
-
-        // Update the time text
-        hours = (int)gameHour;
-        minutes = (int)((gameTimeInHours % 1) * 60);
-        timeText.text = $"{hours:00}:{minutes:00}";
-    }*/
-
     void Update()
     {
         currentTime += Time.deltaTime * timeSpeedMultiplier;
