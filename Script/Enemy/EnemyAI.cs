@@ -42,25 +42,6 @@ public class EnemyAI : MonoBehaviour
     {
         StartCoroutine(RoamingRoutine());
     }
-/*
-    private void OnTriggerEnter2D(Collider2D other) 
-    {
-        if (other.gameObject.CompareTag("Player") && AttackRange.IsTouching(other)) {
-            Debug.Log("PlayerEnterArea");
-            state = State.Chase;
-            //PlayerHealth.instance.TakeDamage(1);
-        }
-    }
-
-        
-    private void OnTriggerExit2D(Collider2D other) 
-    {
-        if (other.gameObject.CompareTag("Player")) 
-        {
-            Debug.Log("PlayerExitArea");
-            state = State.Roaming;
-        }
-    } */
 
     private void GoingToAttacking()
     {
