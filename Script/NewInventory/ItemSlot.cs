@@ -46,48 +46,7 @@ public class ItemSlot : MonoBehaviour
 
     private void UpdateItemAmountText()
     {
-       /* if (item != null)
-        {
-            int itemCount = Inventory.instance.itemCounts[item.name];
-            itemAmountText.text = itemCount > 1 ? itemCount.ToString() : ""; // Display the count only if it's more than 1
-        } */
 
-/*===============================================================*/
-        /*if(item != null)
-        {
-            foreach (KeyValuePair<string, int> entry in Inventory.instance.itemCounts)
-            {
-                Debug.Log(entry.Key + ": " + entry.Value);
-            }
-        }*/
-
-/*===============================================================*/
-        /*if (item != null)
-        {
-            string itemName = item.name;
-            if (Inventory.instance.itemCounts.TryGetValue(itemName, out int itemCount))
-            {
-                itemAmountText.text = itemCount > 1 ? itemCount.ToString() : "";
-            }
-            else
-            {
-                itemAmountText.text = "";
-            }
-        }*/
-
-
-        /*if (item != null && Inventory.instance != null)
-        {
-            string itemName = item.name;
-            if (Inventory.instance.itemCounts.TryGetValue(itemName, out int itemCount))
-            {
-                itemAmountText.text = itemCount > 1 ? itemCount.ToString() : "";
-            }
-            else
-            {
-                itemAmountText.text = "";
-            }
-        }*/
     }
 
     public void UseItem()
