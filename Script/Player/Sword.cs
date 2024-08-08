@@ -195,22 +195,4 @@ public class Sword : MonoBehaviour
         }
     }
 
-    /*private void MouseFollowWithOffset() 
-    {
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(playerController.transform.position);
-
-        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-
-        if (mousePos.x < playerScreenPoint.x) 
-        {
-            activeWeapon.transform.rotation = Quaternion.Euler(0, 0, -angle);
-            weaponCollider.transform.rotation = Quaternion.Euler(0, 0, 0);
-        } 
-        else 
-        {
-            activeWeapon.transform.rotation = Quaternion.Euler(0, 0, angle);
-            weaponCollider.transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-    }*/
 }
