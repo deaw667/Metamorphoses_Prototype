@@ -29,14 +29,6 @@ public class PlayerHealth : MonoBehaviour
     }
     #endregion
 
-    /*void Start()
-    {
-        currentHealth = startingHealth;
-        flash = GetComponent<Flash>();
-        StartInstantiateHealthBars();
-        MaxedhealthBars = new List<GameObject>(HealthBarMax.transform.GetComponentsInChildren<GameObject>());
-        healthBars = new List<GameObject>(HealthBar.transform.GetComponentsInChildren<GameObject>());        
-    }*/
 
     void Start()
     {
@@ -168,10 +160,6 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    /*public void DeleteHeart(int damageamout)
-    {
-        Object.Destroy(HealthBar.transform.GetChild(damageamout).gameObject);
-    }*/
 
     public void DeleteHeart(int damageamount)
     {
