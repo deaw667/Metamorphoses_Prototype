@@ -19,22 +19,6 @@ public class ArmorSlot : MonoBehaviour
 
     }
 
-    /*private void UpdateArmorUI()
-    {
-        int currentUsedSlotCount = Inventory.instance.ArmorItemList.Count;
-        for(int i = 0; i < ArmorSlotSize; i++)
-        {
-            if(i < currentUsedSlotCount)
-            {
-                ArmorSlots[i].AddItem(Inventory.instance.ArmorItemList[i]);
-            }
-            else
-            {
-                ArmorSlots[i].ClearSlot();
-            }
-        }
-
-    } */
 
     private void UpdateArmorUI()
     {
