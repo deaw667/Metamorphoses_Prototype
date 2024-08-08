@@ -100,10 +100,6 @@ public class Enemy_Framework : MonoBehaviour
     {
         // Play the attacking animation
         animator.SetBool("IsAttacking", true);
-
-        // Add your attack logic here
-        // For example, you could deal damage to the player
-        // player.GetComponent<PlayerHealth>().TakeDamage(10);
     }
 
     void StopAttacking()
