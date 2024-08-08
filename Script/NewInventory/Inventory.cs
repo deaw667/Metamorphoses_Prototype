@@ -230,45 +230,6 @@ public class Inventory : MonoBehaviour
         onItemChange.Invoke();
     }
     
-    /*public bool ContainsItem(string itemName, int amount)
-    {
-        int itemCounter = 0;
-
-        foreach(Item i in inventoryItemList)
-        {
-            if(i.name == itemName)
-            {
-                itemCounter++;
-            }
-        }
-
-        foreach (Item i in hotbarItemList)
-        {
-            if (i.name == itemName)
-            {
-                itemCounter++;
-            }
-        }
-
-        
-        foreach (Item i in ArmorItemList)
-        {
-            if (i.name == itemName)
-            {
-                itemCounter++;
-            }
-        }
-
-        if (itemCounter >= amount)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    } */
-
     public bool ContainsItemAmount(string itemName, int amount)
     {
         if (itemCounts.ContainsKey(itemName))
@@ -281,19 +242,6 @@ public class Inventory : MonoBehaviour
         }
     }
 
-   /* public void RemoveItems(string itemName, int amount)
-    {
-        for(int i = 0; i < amount; ++i)
-        {
-            RemoveItemType(itemName);
-        }
-    } */
-
-
-
-
-    //====================================================================//
-    //====================================================================//
     public void RemoveItemThatAmount(string itemName, int amount)
     {
         for(int i = 0; i < amount; ++i)
@@ -352,17 +300,6 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-
-    //====================================================================//
-    //====================================================================//
-
-
-
-
-
-
-    //====================================================================//
-    //====================================================================//
     
     public void RemoveItemAmount(Item item, int amount)
     {
@@ -380,50 +317,5 @@ public class Inventory : MonoBehaviour
 
         onItemChange.Invoke();
     }
-
-    /*public void RemoveItemType(string itemName)
-    {
-        foreach (Item i in inventoryItemList)
-        {
-            if (i.name == itemName)
-            {
-                inventoryItemList.Remove(i);
-                itemCounts[itemName]--;
-                if (itemCounts[itemName] <= 0)
-                {
-                    itemCounts.Remove(itemName);
-                }
-                return;
-            }
-        } 
-
-        foreach (Item i in hotbarItemList)
-        {
-            if (i.name == itemName)
-            {
-                hotbarItemList.Remove(i);
-                itemCounts[itemName]--;
-                if (itemCounts[itemName] <= 0)
-                {
-                    itemCounts.Remove(itemName);
-                }
-                return;
-            }
-        }
-
-        foreach (Item i in ArmorItemList)
-        {
-            if (i.name == itemName)
-            {
-                ArmorItemList.Remove(i);
-                itemCounts[itemName]--;
-                if (itemCounts[itemName] <= 0)
-                {
-                    itemCounts.Remove(itemName);
-                }
-                return;
-            }
-        }
-    } */
 
 }
