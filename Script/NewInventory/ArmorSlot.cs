@@ -60,65 +60,6 @@ public class ArmorSlot : MonoBehaviour
         }
     }
 
-    /*private void UpdateArmorUI()
-    {
-        int currentUsedSlotCount = Inventory.instance.ArmorItemList.Count;
-        for(int i = 0; i < ArmorSlotSize; i++)
-        {
-            if(i < currentUsedSlotCount)
-            {
-                ArmorItem item = (ArmorItem)Inventory.instance.ArmorItemList[i];
-                bool isAlreadyEquipped = false;
-
-                // Check if the item is already equipped
-                foreach (ArmorItem equippedItem in Inventory.instance.ArmorItemList)
-                {
-                    if (equippedItem.itemType == item.itemType)
-                    {
-                        isAlreadyEquipped = true;
-                        break;
-                    }
-                }
-
-                if (!isAlreadyEquipped)
-                {
-                    if(item.itemType == ArmorItemType.Head)
-                    {
-                        ArmorSlots[0].AddItem(item);
-                        Debug.Log("it a helmet");
-                    }
-                    else if(item.itemType == ArmorItemType.Chest)
-                    {
-                        ArmorSlots[1].AddItem(item);
-                        Debug.Log("it a armor");
-                    }
-                    else if(item.itemType == ArmorItemType.Leg)
-                    {
-                        ArmorSlots[2].AddItem(item);
-                        Debug.Log("it a leg");
-                    }
-                    else if(item.itemType == ArmorItemType.Foot)
-                    {
-                        ArmorSlots[3].AddItem(item);
-                        Debug.Log("it a foot");
-                    }
-                    else
-                    {
-                        Debug.Log("nah it not armor");
-                    }
-                }
-                else
-                {
-                    Debug.Log("Item is already equipped");
-                }
-            }
-            else
-            {
-                ArmorSlots[i].ClearSlot();
-            }
-        }
-    }*/
-
     private void SetUpArmorSlots()
     {
         for(int i = 0; i < ArmorSlotSize; i++)
